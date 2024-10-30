@@ -1,4 +1,9 @@
-dist
+*.min.js
 node_modules
-.github
-.changeset
+*.yml
+
+# cache-dirs
+**/.cache
+
+pnpm-lock.yaml
+dist
