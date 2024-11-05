@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import profilePic from "@/assets/profile-pic.jpg";
+import SocialList from "@/components/SocialList.astro";
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+    description: "About Ben Colwell",
+    title: "About",
+};
+---
+
+<PageLayout meta={meta}>
+    <div class="space-y-6">
+        <h1 class="title">About Me</h1>
+        <Image
+            alt="Ben Colwell profile pic"
+            fetchpriority="high"
+            loading="eager"
+            src={profilePic}
+            class="h-32 w-32 rounded-full"
+        />
+        <!--<ul class="list-inside list-disc">
+            <li>Programming Languages: C#, TypeScript, JavaScript</li>
+            <li>Over 15 years of professional tech industry experience</li>
+        </ul>-->
+        <p>
+            My journey into the world of computing began in the early 1990s. As a kid I enjoyed
+            playing computer games, and wanted to be able to build my own. So I began learning
+            QBasic to program text adventure games, and drew graphics and animations for the games
+            in a funky old DOS program. Eventually I moved on to C++ and programming small Windows
+            games.
+        </p>
+        <p>
+            My professional career as a developer began years later, when I was introduced to Flash
+            and realized that it was the game development tool I had always wanted as a kid. Drawing
+            vector animations and bringing them to life with object-oriented code was an exciting
+            new world that seemed to hold endless possibilities. I made some Flash games in college,
+            and soon embarked on a career as a Flash developer.
+        </p>
+        <p>
+            Around 2015 I began working primarily with HTML5 and JavaScript/TypeScript in my
+            professional life, and have continued doing so in different roles until now. In 2018 I
+            started working with Unity and C#, and since then I’ve been using Unity for my game
+            projects.
+        </p>
+        <p>Today I’m focused primarily on game development with Unity and C#.</p>
+        <SocialList />
+    </div>
+</PageLayout>

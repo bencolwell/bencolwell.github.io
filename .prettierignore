@@ -1,0 +1,9 @@
+*.min.js
+node_modules
+*.yml
+
+# cache-dirs
+**/.cache
+
+pnpm-lock.yaml
+dist
