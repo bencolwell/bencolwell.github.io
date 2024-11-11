@@ -4,7 +4,7 @@ description: "This post details how to create sprite sheets with TexturePacker f
 publishDate: "Nov 2 2024"
 tags: ["unity", "csharp", "texturepacker"]
 coverImage:
-  src: "./sprite-sheets-unity-texturepacker-cover.png"
+  src: "./sprite-sheets-unity-texturepacker-cover.jpg"
   alt: "TexturePacker sprite sheet"
 ---
 
